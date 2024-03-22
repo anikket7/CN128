@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f1ddcf;
+}
+
+.container {
+    position: relative;
+    width: 70vw;
+    height: 80vh;
+    background: #eae3df;
+    border-radius: 22px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.sign_in-sign_up{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-width: 240px;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+}
+.title{
+    font-size: 40px;
+    color: rgb(3, 3, 3);
+    margin-bottom:auto;
+}
+.input-line{
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    margin: 10px;
+    border: 5px solid rgb(148, 101, 101);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    
+}
+.input-line i{
+    flex: 1;
+    text-align: center;
+    color: rgb(100, 42, 42);
+    font-size: 20px;
+}
+.input-line input{
+    flex: 5;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(119, 9, 72);
+}
+.button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    color: rgb(3, 6, 0);
+    background-color: rgb(171, 127, 180);
+    font-weight: 500;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+.button:hover{
+    background: plum;
+}
+.social{
+    margin: 10px 0;
+    font-size: 16px;
+}
+.social_media{
+    justify-content: center;
+    display: flex;
+}
+.social_icon{
+    height: 50px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:chocolate;
+    border: 2px solid chocolate;
+    border-radius: 50px;
+    margin: 0 5px;
+}
