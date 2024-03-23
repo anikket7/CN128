@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendations</title>
+    <style>
+        .careerleap {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-shadow:3px 3px 3px black;
+            border: 1px solid #ddd;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            border-radius: 10px;
+        }
+        .website-name {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .small-logo {
+            width: 30px; 
+            height: 30px;
+        }
+        .nav-options {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-option {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .nav-option:hover {
+            background-color: #0056b3;
+        }
+        .login-signup {
+            display: flex;
+            gap: 20px;
+        }
+        .login-signup a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 5px;
+            background-color: #007BFF;
+            transition: background-color 0.3s ease;
+        }
+        .login-signup a:hover {
+            background-color: #0056b3;
+        }
+        .intro {
+            max-width: 625px;
+            margin: 30px auto;
+            overflow: hidden;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+        }
+        .intro-image {
+            flex: 1;
+        }
+        .intro-image img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        .intra {
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            width: 385px;
+            border-radius: 10px;
+        }
+        .intra img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .cflex {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .book-details {
+            flex: 1;
+            padding: 20px;
+        }
+        h1{
+            text-shadow:3px 3px 3px black;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5; 
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            text-shadow:3px 3px 3px black;
+            border: 1px solid #ddd;
+        }
+        .page {
+            display: flex;
+            max-width: 90%;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .info {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .info h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .info p {
+            color: #666;
+        }
+        .info-image {
+            flex: grow;
+            overflow: hidden;
+            width: fit-content;
+            border-radius: 10px;
+        }
+        .info-image img {
+            width: 250px;
+            height: 200px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border-radius: 10px;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .page1 {
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 10px;
+            width: 417px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .page1 img {
+            max-width: 50%;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            text-shadow:3px 3px 3px black;
+        }
+        .book-review {
+            color: #777;
+        }
+        h3{
+            text-align: center;
+        }
+        .content {
+            max-width: 1400px;
+            margin: 20px auto;
+            overflow: hidden;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: flex;
+            text-align: center;
+        }
+        .content1 {
+            max-width: 1425px;
+            margin: 20px auto;
+            overflow: hidden;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: flex;
+            text-align: center;
+        }
+        .cover {
+            flex: 1;
+        }
+        .cover img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        .review-content {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer p {
+            margin-bottom: 10px;
+        }
+        .footer-nav {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .footer-nav li:last-child {
+            margin-right: 0;
+        }
+        .footer-nav li a {
+            color: #f8f9fa;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="careerleap">
+        <div class="logo">
+          <div class="website-name">CAREER~LEAP</div>
+          <img src="https://i.pinimg.com/564x/9b/e1/94/9be194aeaa84e9a81fcc39ac346c7a5b.jpg" alt="Small Logo" class="small-logo">
+        </div>
+    
+        <div class="nav-options">
+          <a href="#" class="nav-option">Home</a>
+          <a href="#" class="nav-option">Search</a>
+          <a href="#" class="nav-option">Menu</a>
+          <a href="#" class="nav-option">Notification</a>
+          <a href="#" class="nav-option">Settings</a>
+          <a href="#" class="nav-option">Your Account</a>
+        </div>
+    
+        <div class="login-signup">
+          <a href="login.html" class="login">Login</a>
+          <a href="signup.html" class="signup">Sign Up</a>
+        </div>
+    </header>
+    <header>
+        <h3>"Each job discovered is a step closer to uncovering your true potential."</h3>
+    </header>
+    <div class="content1">
+        <div class="cover">
+          <img src="https://i.pinimg.com/564x/1f/81/86/1f8186c95dfc8c97d09ba8cf514bbf76.jpg">
+        </div>
+        <div class="review-content">
+           <h2>Exploring opportunities isn't just about finding a job; it's about discovering yourself, your passions, and the endless possibilities that await when you embrace the journey of growth and discovery in the world of work.</h2>
+           <h3>Embark on the journey of job discovery, where every opportunity uncovered brings you closer to realizing your dreams and embracing new horizons of success.</h3>
+        </div>
+        <div class="cover">
+          <img src="https://i.pinimg.com/564x/ff/32/db/ff32dbb427b68d4ed642a358c3a9d15c.jpg">
+        </div>
+    </div>
+    <div class="cflex">
+        <section class="intra">
+          <img src="https://i.pinimg.com/564x/37/0c/4c/370c4ca0438d0bafce009a1798460016.jpg">
+          <h3>Attention Job Seekers! Your next career opportunity awaits. Join our dynamic team and unlock your potential. Explore a variety of roles tailored to your skills and interests. Whether you're a seasoned professional or just starting out, we have opportunities for everyone. Don't miss out on your chance to take the next step in your career journey. Browse our latest openings and apply today!</h3>
+        </section>
+    
+        <div>
+          <div class="intro">
+            <div class="intro-image">
+              <img src="https://i.pinimg.com/564x/3d/ef/04/3def04268f113a74d2b1326e512675dd.jpg">
+            </div>
+            <div class="book-details">
+              <h3>Problem-solving skills are not merely tools for overcoming obstacles; they're the compass guiding us through life's labyrinth, empowering us to navigate challenges, innovate solutions, and forge paths towards success.</h3>
+            </div>
+          </div>
+    
+          <div class="intro">
+            <div class="intro-image">
+              <img src="https://i.pinimg.com/564x/9f/4e/76/9f4e761102593def0f3b33a5dbee7679.jpg">
+            </div>
+            <div class="book-details">
+              <h3>Your resume is more than just a document; it's your personal billboard in the digital landscape, showcasing your talents, experiences, and aspirations to the world. Craft it with care, it holds power to open doors and pave the way to your next great adventure.</h3>
+            </div>
+          </div>
+        </div>
+    
+        <section class="intra">
+          <img src="https://i.pinimg.com/564x/13/35/f4/1335f445c39eaa27ffc73ca8e83df4b6.jpg">
+          <img src="https://i.pinimg.com/564x/fc/36/52/fc365285e16ac3a785071c46dbc0aa3e.jpg">
+        </section>
+      </div>
+      <header>
+        <h3>Highly Recommended Companies In INDIA</h3>
+      </header>
+    <div class="company">
+        <div class="page">
+            <div class="info">
+              <h2>Reliance Industries Limited</h2>
+              <p>Founder: Dhirubhai Ambani</p>
+              <p>Subsidiaries: Reliance Retail, Jio-bp, Jio Platforms, Network18</p>
+              <p>Reliance Industries Limited is an Indian multinational conglomerate headquartered in Mumbai. Its businesses include energy, petrochemicals, natural gas, retail, telecommunications, mass media, entertainment, and textiles.<a href="https://en.wikipedia.org/wiki/Reliance_Industries"> Read more...</a></p>
+            </div>
+            <div class="info-image">
+              <a href="rel.html"><img src="rel.jpg"></a>
+            </div>
+        </div>
+        <div class="page">
+            <div class="info">
+              <h2>Tata Group</h2>
+              <p>Founder: Jamsetji Tata</p>
+              <p>Subsidiaries: Tata Motors, Tata Consultancy Services</p>
+              <p>The Tata Group is a group of companies headquartered in Mumbai. Established in 1868, it is India's largest conglomerate, with products and services in over 150 countries, and operations in 100 countries across six continents.<a href="https://en.wikipedia.org/wiki/Reliance_Industries"> Read more...</a></p>
+            </div>
+            <div class="info-image">
+              <a href="tata.html"><img src="tata.jpg"></a>
+            </div>
+        </div>
+        <div class="page">
+            <div class="info">
+              <h2>Infosys Limited</h2>
+              <p>Founders: N. R. Narayana Murthy, Nandan Nilekani</p>
+              <p>Subsidiaries: Infosys BPM; Infosys Panaya</p>
+              <p>Infosys Limited is an Indian multinational information technology company that provides business consulting, information technology and outsourcing services. The company was founded in Pune and is headquartered in Bangalore.<a href="https://en.wikipedia.org/wiki/Infosys"> Read more...</a></p>
+            </div>
+            <div class="info-image">
+              <a href="info.html"><img src="info.jpg"></a>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h3>Also can apporach</h3>
+    </header>
+    <main>
+        <section class="page1">
+            <img src="https://i.pinimg.com/564x/f3/6d/d0/f36dd0a7addec3cab146ff429b155c6f.jpg">
+            <h2>Companies</h2>
+        </section>
+        <section class="page1">
+            <img src="https://i.pinimg.com/564x/63/58/52/63585220dc2cc01a9fbf38fea1ce0b1d.jpg">
+            <h2>Jobs</h2>
+        </section>
+        <section class="page1">
+            <img src="https://i.pinimg.com/564x/12/19/4c/12194c5c011f5057b7cddcc5f82095a4.jpg">
+            <h2>Services</h2>
+        </section>
+    </main>
+    <div class="content">
+        <div class="cover">
+          <img src="https://i.pinimg.com/564x/9a/c2/45/9ac245a39ad0ac5397151df301353cd1.jpg">
+        </div>
+        <div class="review-content">
+            <br>
+          <h2>Success isn't just a destination; it's a journey of resilience and self-discovery. It's about daring to dream, acting with courage, and persevering through adversity. True success isn't just what we achieve, but who we become along the way.</h2>
+             
+        </div>
+        <div class="cover">
+          <img src="https://i.pinimg.com/564x/95/b2/bb/95b2bb944b3842b28239155a5a77fab9.jpg">
+        </div>
+    </div>
+        <footer>
+                <p>&copy; 2024 JobPortal. All rights reserved.</p>
+                <ul class="footer-nav">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </footer>
+</body>
+</html>
